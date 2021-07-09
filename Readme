@@ -1,0 +1,26 @@
+# How to simulate this RTL code
+Enter the folder and use the following command
+    $ make
+
+If you want to clean up the files that generate from source, please use the following command
+    $ make clean
+
+
+# How to synthesis this RTL code
+If you want to synthesis the AES-128 RTL code, please use the following command
+    $ dc_shell -f top.dc
+
+However, the code after synthesis still has some bugs, you can still try the following command and check the errors
+    $ make syn
+
+# How to change the plaintext and key
+Open the testbench.v, In line 48~72 you can see the initialization of plaintext and key.
+
+I have already created 
+    1. random
+    2. all 0s
+    3. all 1s
+
+You can choose one type and comment the others to try different patterns.
+
+
