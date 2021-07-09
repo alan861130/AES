@@ -10,7 +10,7 @@ If you want to clean up the files that generate from source, please use the foll
 If you want to synthesis the AES-128 RTL code, please use the following command
     $ dc_shell -f top.dc
 
-However, the code after synthesis still has some bugs, you can still try the following command and check the errors
+However, the code after synthesis still has some bugs, you can try the following command and check the errors
     $ make syn
 
 # How to change the plaintext and key
